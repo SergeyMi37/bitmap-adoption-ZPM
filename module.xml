@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="terminal-multiline.ZPM">
+  <Document name="bitmap-adoption.ZPM">
     <Module>
-      <Name>terminal-multiline</Name>
+      <Name>bitmap-adoption</Name>
       <Version>1.0.1</Version>
-      <Description>Multi-Line in Terminal Command</Description>
-      <Keywords>Terminal, COS</Keywords>
+      <Description>Bitmaps for nonstandard IDs</Description>
+      <Keywords>Bitmap, COS</Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-       <Resource Name="%zml.MAC"/>
+       <Resource Name="Bmap.PKG"/>
     </Module>
   </Document>
 </Export>
