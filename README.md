@@ -31,7 +31,7 @@ __demo 1__
   select count(*) from Bmap.Person where Ctry='RU'  
   Relative cost = 197762  
   10015 global references 70474 lines executed  
->>>>>  
+  
   select count(*) from Bmap.PersonQ where Bmap.Ctry('RU')=1  
   Relative cost = 401400  
   10 global references 424 lines executed  
@@ -39,29 +39,29 @@ __demo 1__
 
 __demo2__
 ~~~
-  select count(*) from Bmap.Person 
+  select count(*) from Bmap.Person  
      where Ctry='RU' and home_state='MA'  
-  Relative cost = 457.96  
-  218 Global references 2335 lines executed 0  
+  Relative cost = 457.96   
+  218 Global references 2335 lines executed   
 
-  select count(*) from Bmap.PersonQ 
+  select count(*) from Bmap.PersonQ   
      where Bmap.Ctry('RU')=1 and home_state='MA'   
-  Relative cost = 2012.8  
+  Relative cost = 2012.8   
   16 global references 478 lines executed  
 ~~~
 
 __demo3__
 ~~~
-  select home_state,count(*) from Bmap.Person 
-     where Ctry='RU' group by home_state
+  select home_state,count(*) from Bmap.Person   
+     where Ctry='RU' group by home_state  
   Relative cost = 372162
-  Row count: 50 Performance: 0.027 seconds  
-  10420 global references 153708 lines
+  Row count: 50 Performance: 0.027 seconds   
+  10420 global references 153708 lines  
   
-  select home_state,count(*) from Bmap.PersonQ 
-     where Bmap.Ctry('RU')=1 group by home_state
-  Relative cost = 453400
-  Row count: 50 Performance: 0.018 seconds  
-  817 global references 155475 lines executed
+  select home_state,count(*) from Bmap.PersonQ   
+     where Bmap.Ctry('RU')=1 group by home_state  
+  Relative cost = 453400  
+  Row count: 50 Performance: 0.018 seconds   
+  817 global references 155475 lines executed  
 
 ~~~
