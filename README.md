@@ -20,48 +20,48 @@ We are ready to use a Bitmap index.
 A few performance figures on 300010 generated records.  
 You see that Relative Cost are sometimes quite misleading.  
 
-__base__
+__base__ 
 ~~~
   select count(*) from Bmap.Person  
-  300010 global references 1600446 lines executed  
+  300010 global references 1600446 lines executed   
 ~~~
 
-__demo 1__
+__demo 1__  
 ~~~
   select count(*) from Bmap.Person where Ctry='RU'  
   Relative cost = 197762  
-  10015 global references 70474 lines executed  
-  
+  10015 global references 70474 lines executed    
+      
   select count(*) from Bmap.PersonQ where Bmap.Ctry('RU')=1  
   Relative cost = 401400  
-  10 global references 424 lines executed  
+  10 global references 424 lines executed   
 ~~~
 
-__demo2__
+__demo2__  
 ~~~
-  select count(*) from Bmap.Person  
-     where Ctry='RU' and home_state='MA'  
-  Relative cost = 457.96   
+  select count(*) from Bmap.Person   
+     where Ctry='RU' and home_state='MA'   
+  Relative cost = 457.96    
   218 Global references 2335 lines executed   
-
+   
   select count(*) from Bmap.PersonQ   
      where Bmap.Ctry('RU')=1 and home_state='MA'   
   Relative cost = 2012.8   
   16 global references 478 lines executed  
 ~~~
 
-__demo3__
+__demo3__  
 ~~~
   select home_state,count(*) from Bmap.Person   
      where Ctry='RU' group by home_state  
-  Relative cost = 372162
+  Relative cost = 372162   
   Row count: 50 Performance: 0.027 seconds   
   10420 global references 153708 lines  
-  
+      
   select home_state,count(*) from Bmap.PersonQ   
-     where Bmap.Ctry('RU')=1 group by home_state  
-  Relative cost = 453400  
-  Row count: 50 Performance: 0.018 seconds   
-  817 global references 155475 lines executed  
+     where Bmap.Ctry('RU')=1 group by home_state    
+  Relative cost = 453400    
+  Row count: 50 Performance: 0.018 seconds    
+  817 global references 155475 lines executed    
 
 ~~~
