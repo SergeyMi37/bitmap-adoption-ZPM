@@ -3,7 +3,7 @@
   <Document name="bitmap-adoption.ZPM">
     <Module>
       <Name>bitmap-adoption</Name>
-      <Version>1.0.1</Version>
+      <Version>1.0.2</Version>
       <Description>Bitmaps for nonstandard IDs</Description>
       <Keywords>Bitmap, COS</Keywords>
       <Packaging>module</Packaging>
