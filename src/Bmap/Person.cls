@@ -13,9 +13,9 @@ Property SSN As %String(PATTERN = "3N1""-""2N1""-""4N") [ Required ];
 
 Property DOB As %Date(POPSPEC = "Date()");
 
-Property Home As Sample.Address;
+Property Home As Bmap.Address;
 
-Property Office As Sample.Address;
+Property Office As Bmap.Address;
 
 Property FavoriteColors As list Of %String(POPSPEC = "ValueList("",Red,Orange,Yellow,Green,Blue,Purple,Black,White""):2");
 
