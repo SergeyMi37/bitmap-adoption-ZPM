@@ -13,3 +13,5 @@ Property State As %String(MAXLEN = 2, POPSPEC = "USState()");
 
 /// The 5-digit U.S. Zone Improvement Plan (ZIP) code.
 Property Zip As %String(MAXLEN = 5, POPSPEC = "USZip()");
+
+}
