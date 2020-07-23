@@ -15,3 +15,4 @@ Property State As %String(MAXLEN = 2, POPSPEC = "USState()");
 Property Zip As %String(MAXLEN = 5, POPSPEC = "USZip()");
 
 }
+
