@@ -4,8 +4,7 @@
  It is also NOT serviced by InterSystems Support !   
 ~~~ 
 
-This is a running example of the Bitmap Adoption described in  
-https://community.intersystems.com/post/adopted-bitmap  
+This is a running example of the article in DC on [Bitmap Adoption](https://community.intersystems.com/post/adopted-bitmap)   
 
 The full background story is found there.  
 
