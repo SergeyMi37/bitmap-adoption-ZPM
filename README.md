@@ -64,3 +64,5 @@ __demo3__
   817 global references 155475 lines executed    
 
 ~~~
+
+[Article in DC](https://community.intersystems.com/post/adopted-bitmap)
